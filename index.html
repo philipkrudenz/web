@@ -1,0 +1,319 @@
+<!doctype html>
+<html lang="cs">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Přednášky o paměti a finanční gramotnosti | Filip Krudenc</title>
+<meta name="description" content="Filip Krudenc: přednášky o paměťových technikách, efektivitě učení, finanční gramotnosti a Evropské unii pro školy a firmy. Individuální i skupinové tréninky pohybu.">
+<link rel="canonical" href="https://filipkrudenc.cz/">
+<meta property="og:url" content="https://filipkrudenc.cz/">
+<meta property="og:type" content="website">
+<meta property="og:locale" content="cs_CZ">
+<meta property="og:site_name" content="Filip Krudenc">
+<meta property="og:title" content="Přednášky o paměti a finanční gramotnosti | Filip Krudenc">
+<meta property="og:description" content="Přednášky o paměťových technikách, efektivitě učení, finanční gramotnosti a EU. K tomu individuální i skupinové tréninky pohybu.">
+<meta name="twitter:card" content="summary">
+<link rel="preload" href="fonts/archivo-latin-800-normal.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="fonts/instrument-serif-latin-400-normal.woff2" as="font" type="font/woff2" crossorigin>
+<style>
+@font-face{font-family:'Archivo';font-style:normal;font-weight:400;font-display:swap;src:url(fonts/archivo-latin-ext-400-normal.woff2) format('woff2');unicode-range:U+0100-02BA,U+02BD-02C5,U+02C7-02CC,U+02CE-02D7,U+02DD-02FF,U+0304,U+0308,U+0329,U+1D00-1DBF,U+1E00-1E9F,U+1EF2-1EFF,U+2020,U+20A0-20AB,U+20AD-20C0,U+2113,U+2C60-2C7F,U+A720-A7FF}
+@font-face{font-family:'Archivo';font-style:normal;font-weight:400;font-display:swap;src:url(fonts/archivo-latin-400-normal.woff2) format('woff2');unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD}
+@font-face{font-family:'Archivo';font-style:normal;font-weight:500;font-display:swap;src:url(fonts/archivo-latin-ext-500-normal.woff2) format('woff2');unicode-range:U+0100-02BA,U+02BD-02C5,U+02C7-02CC,U+02CE-02D7,U+02DD-02FF,U+0304,U+0308,U+0329,U+1D00-1DBF,U+1E00-1E9F,U+1EF2-1EFF,U+2020,U+20A0-20AB,U+20AD-20C0,U+2113,U+2C60-2C7F,U+A720-A7FF}
+@font-face{font-family:'Archivo';font-style:normal;font-weight:500;font-display:swap;src:url(fonts/archivo-latin-500-normal.woff2) format('woff2');unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD}
+@font-face{font-family:'Archivo';font-style:normal;font-weight:700;font-display:swap;src:url(fonts/archivo-latin-ext-700-normal.woff2) format('woff2');unicode-range:U+0100-02BA,U+02BD-02C5,U+02C7-02CC,U+02CE-02D7,U+02DD-02FF,U+0304,U+0308,U+0329,U+1D00-1DBF,U+1E00-1E9F,U+1EF2-1EFF,U+2020,U+20A0-20AB,U+20AD-20C0,U+2113,U+2C60-2C7F,U+A720-A7FF}
+@font-face{font-family:'Archivo';font-style:normal;font-weight:700;font-display:swap;src:url(fonts/archivo-latin-700-normal.woff2) format('woff2');unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD}
+@font-face{font-family:'Archivo';font-style:normal;font-weight:800;font-display:swap;src:url(fonts/archivo-latin-ext-800-normal.woff2) format('woff2');unicode-range:U+0100-02BA,U+02BD-02C5,U+02C7-02CC,U+02CE-02D7,U+02DD-02FF,U+0304,U+0308,U+0329,U+1D00-1DBF,U+1E00-1E9F,U+1EF2-1EFF,U+2020,U+20A0-20AB,U+20AD-20C0,U+2113,U+2C60-2C7F,U+A720-A7FF}
+@font-face{font-family:'Archivo';font-style:normal;font-weight:800;font-display:swap;src:url(fonts/archivo-latin-800-normal.woff2) format('woff2');unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD}
+@font-face{font-family:'Instrument Serif';font-style:normal;font-weight:400;font-display:swap;src:url(fonts/instrument-serif-latin-ext-400-normal.woff2) format('woff2');unicode-range:U+0100-02BA,U+02BD-02C5,U+02C7-02CC,U+02CE-02D7,U+02DD-02FF,U+0304,U+0308,U+0329,U+1D00-1DBF,U+1E00-1E9F,U+1EF2-1EFF,U+2020,U+20A0-20AB,U+20AD-20C0,U+2113,U+2C60-2C7F,U+A720-A7FF}
+@font-face{font-family:'Instrument Serif';font-style:normal;font-weight:400;font-display:swap;src:url(fonts/instrument-serif-latin-400-normal.woff2) format('woff2');unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD}
+@font-face{font-family:'Instrument Serif';font-style:italic;font-weight:400;font-display:swap;src:url(fonts/instrument-serif-latin-ext-400-italic.woff2) format('woff2');unicode-range:U+0100-02BA,U+02BD-02C5,U+02C7-02CC,U+02CE-02D7,U+02DD-02FF,U+0304,U+0308,U+0329,U+1D00-1DBF,U+1E00-1E9F,U+1EF2-1EFF,U+2020,U+20A0-20AB,U+20AD-20C0,U+2113,U+2C60-2C7F,U+A720-A7FF}
+@font-face{font-family:'Instrument Serif';font-style:italic;font-weight:400;font-display:swap;src:url(fonts/instrument-serif-latin-400-italic.woff2) format('woff2');unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD}
+
+
+html{scroll-behavior:smooth}
+body{margin:0;background:#111315}
+*{box-sizing:border-box}
+.hero{display:grid;grid-template-columns:1fr 1fr;min-height:820px;transition:grid-template-columns .6s cubic-bezier(.2,.7,.2,1)}
+@media (hover:hover) and (min-width:1000px){
+.hero:has(.half-l:hover){grid-template-columns:1.15fr 1fr}
+.hero:has(.half-r:hover){grid-template-columns:1fr 1.15fr}
+}
+@media (max-width:999px){
+.hero{grid-template-columns:1fr;min-height:0}
+.half{min-height:320px}
+}
+.half{position:relative;min-width:0}
+.stretch::after{content:"";position:absolute;inset:0}
+.word svg{transition:transform .25s ease}
+.half:hover .word svg{transform:translateX(12px)}
+.half:hover .word span{text-decoration:underline;text-decoration-thickness:4px;text-underline-offset:.1em}
+.half-l:hover .word{color:var(--accent-l)}
+a{color:inherit}
+a:focus-visible{outline:3px solid currentColor;outline-offset:4px}
+.kont{position:fixed;top:16px;right:clamp(16px,3vw,40px);z-index:100}
+.kont-btn{font:inherit;cursor:pointer;font-weight:700;font-size:16px;min-height:44px;padding:0 18px;border-radius:999px;background:#111315;color:var(--accent);border:1px solid rgba(237,237,232,.25);box-shadow:0 6px 24px rgba(0,0,0,.25);display:inline-flex;align-items:center;gap:8px}
+.kont-btn svg{transition:transform .2s ease}
+.kont:has(.panel:popover-open) .kont-btn svg{transform:rotate(180deg)}
+.kont .panel{display:none;position:fixed;inset:auto;top:68px;right:clamp(16px,3vw,40px);margin:0;min-width:260px;padding:8px 20px;background:#111315;color:#EDEDE8;border:0;border-radius:16px;flex-direction:column}
+.kont .panel:popover-open{display:flex}
+.kont .panel a{display:flex;flex-direction:column;gap:2px;padding:14px 0;text-decoration:none;font-weight:700;font-size:17px;border-top:1px solid rgba(237,237,232,.2)}
+.kont .panel a:first-child{border-top:0}
+.kont .panel a small{font-weight:500;font-size:13px;letter-spacing:.08em;text-transform:uppercase;color:var(--accent)}
+.kont .panel a:hover{text-decoration:underline}
+.totop{display:inline-flex;align-items:center;gap:12px;min-height:56px;padding:0 28px;border:2px solid var(--accent);border-radius:999px;color:var(--accent);font-weight:700;font-size:17px;text-decoration:none;transition:background .2s ease,color .2s ease,gap .2s ease}
+.totop:hover{background:var(--accent);color:#111315;gap:18px}
+.sr{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap}
+
+@keyframes rv{from{opacity:0;transform:translateY(90px) scale(.96)}to{opacity:1;transform:none}}
+@keyframes stp{from{opacity:.3;transform:translateY(70px)}to{opacity:1;transform:none}}
+@keyframes out{to{opacity:0;transform:translateY(-70px) scale(.97)}}
+@keyframes par{from{transform:translateY(60px)}to{transform:translateY(-60px)}}
+.pl a{color:inherit}
+.pl a:hover{color:var(--accent-l)}
+.pl a:focus-visible{outline:3px solid currentColor;outline-offset:4px}
+.pl .cta{transition:gap .2s ease}
+.pl .cta:hover{gap:20px;color:var(--accent)}
+.pl .cta2{transition:gap .2s ease, background .2s ease, color .2s ease}
+.pl .cta2:hover{gap:20px;background:#111315;color:var(--accent)}
+.pl .acc summary{list-style:none}
+.pl .acc summary::-webkit-details-marker{display:none}
+.pl .acc summary:focus-visible{outline:3px solid currentColor;outline-offset:4px}
+.pl .acc summary:hover h2{color:var(--accent-l)}
+.pl .acc .plus{flex:none;transition:transform .25s ease}
+.pl .acc[open] .plus{transform:rotate(45deg)}
+.pl .tm-n{transition:color .25s ease}
+.pl .tm:hover .tm-n{color:var(--accent-l)}
+@media (max-width:700px){.pl .tm{grid-template-columns:40px 1fr !important}
+.pl .tm>span:last-child{grid-column:2}}
+.pl .acc:not([open]){border-bottom:1px solid rgba(237, 237, 232, 0.25)}
+@media (prefers-reduced-motion:no-preference){@supports (animation-timeline:view()){.pl section>h1,.pl section>h2,.pl section>p,.pl section>div,.pl section>details,.pl section>span{animation:rv linear both,out linear both;animation-timeline:view(),view();animation-range:entry 0% entry 80%,exit 25% exit 100%}}}
+.pt a{color:inherit}
+.pt a:hover{text-decoration:underline}
+.pt a:focus-visible{outline:3px solid currentColor;outline-offset:4px}
+.pt .forms [style*="border-top"]{border-top-color:var(--accent) !important}
+.pt .forms p{color:#C9CBC5 !important}
+@media (prefers-reduced-motion:no-preference){@supports (animation-timeline:view()){.pt section:not(.stair)>h1,.pt section:not(.stair)>h2,.pt section:not(.stair)>p,.pt section:not(.stair)>div,.pt section:not(.stair)>ol,.pt section:not(.stair)>span{animation:rv linear both,out linear both;animation-timeline:view(),view();animation-range:entry 0% entry 80%,exit 25% exit 100%}}}
+.pt .frm{display:grid;text-decoration:none !important;color:inherit;grid-template-columns:clamp(72px,14vw,200px) 1fr 1.3fr 48px;gap:clamp(12px,2.5vw,32px);align-items:center;padding:32px 0;border-top:1px solid rgba(237,237,232,.25);transition:background .3s ease}
+.pt .frm:last-child{border-bottom:1px solid rgba(237,237,232,.25)}
+.pt .frm:hover{background:linear-gradient(90deg,rgba(212,243,74,.12),transparent)}
+.pt .frm .n{font-weight:800;font-size:clamp(48px,6.6vw,96px);line-height:1;letter-spacing:-.04em;color:transparent;-webkit-text-stroke:2px var(--accent);transition:color .3s ease}
+.pt .frm:hover .n{color:var(--accent)}
+.pt .frm .arr{width:48px;height:48px;border:2px solid var(--accent);border-radius:50%;display:flex;align-items:center;justify-content:center;color:var(--accent);transition:background .3s ease,color .3s ease}
+.pt .frm:hover .arr{background:var(--accent);color:#111315}
+@media (max-width:700px){.pt .frm{grid-template-columns:64px 1fr}
+.pt .frm p{grid-column:1/-1}
+.pt .frm .arr{display:none}}
+.pt .stair{display:grid;grid-template-columns:1fr 1.6fr;gap:clamp(32px,5vw,64px);align-items:start}
+.pt .stair-l{position:sticky;top:96px;margin-top:clamp(300px,34vw,480px)}
+.pt .stp{display:flex;gap:28px;align-items:flex-start;padding:clamp(24px,3vw,36px);border-radius:24px;background:#111315;color:#EDEDE8;margin-bottom:clamp(32px,6vh,72px)}
+.pt .stp:last-child{margin-bottom:0}
+.pt .stp .sn{font-weight:800;font-size:clamp(44px,5vw,64px);line-height:1;color:var(--accent)}
+@media (max-width:899px){.pt .stair{grid-template-columns:1fr}
+.pt .stair-l{position:static;margin-top:clamp(260px,70vw,420px)}
+.pt .stp{margin-bottom:24px;margin-left:0 !important}}
+@media (prefers-reduced-motion:no-preference){@supports (animation-timeline:view()){.pt .stp{animation:stp linear both,out linear both;animation-timeline:view(),view();animation-range:entry 0% entry 90%,exit 25% exit 100%}}}
+.pt .about{display:grid;grid-template-columns:1fr;gap:clamp(24px,3vw,40px);align-items:start}
+@media (max-width:899px){.pt .about{grid-template-columns:1fr}
+.pt .about-img{opacity:.3 !important;height:auto !important;width:110vw !important;top:4% !important;right:-6vw !important}}
+@media (prefers-reduced-motion:no-preference){@supports (animation-timeline:view()){.pt section.about>h2,.pt section.about>div{animation:rv linear both,out linear both;animation-timeline:view(),view();animation-range:entry 25% cover 32%,exit 25% exit 100%}
+.pt .about-img{animation:par linear both;animation-timeline:view();animation-range:cover}}}
+.pt .cta{transition:gap .2s ease}
+.pt .cta:hover{gap:20px;text-decoration:none}
+
+</style>
+</head>
+<body>
+
+
+<div id="top" style="--accent: #D4F34A; --accent-l: #D4F34A; font-family: 'Archivo', system-ui, sans-serif">
+<div class="kont">
+<button class="kont-btn" type="button" popovertarget="kont-panel">Kontakt
+<svg width="16" height="16" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 8l5 5 5-5"></path></svg>
+</button>
+<div class="panel" id="kont-panel" popover>
+<a href="mailto:filip@filipkrudenc.cz"><small>E-mail</small>filip@filipkrudenc.cz</a>
+<a href="https://www.linkedin.com/in/filipkrudenc/" target="_blank" rel="noopener"><small>LinkedIn</small>Filip Krudenc</a>
+<a href="tel:+420792497976"><small>Telefon</small>+420 792 497 976</a>
+<a href="https://www.instagram.com/krudenz/" target="_blank" rel="noopener"><small>Instagram</small>@krudenz</a>
+</div>
+</div>
+<main class="hero" style="--accent: #D4F34A; --accent-l: #D4F34A; background: #111315; font-family: 'Archivo', system-ui, sans-serif">
+<h1 class="sr">Filip Krudenc – přednášky a tréninky</h1>
+
+<section class="half half-l" style="isolation: isolate; overflow: hidden; display: flex; flex-direction: column; justify-content: space-between; gap: 56px; padding: clamp(24px, 4.5vw, 64px); background: #111315; color: #EDEDE8">
+<img src="img/prednasky-sal.jpg" alt="" aria-hidden="true" style="position: absolute; inset: 0; z-index: -1; width: 100%; height: 100%; object-fit: cover; object-position: 80% 50%; opacity: 0.2; pointer-events: none">
+<span style="font-weight: 700; font-size: 17px; letter-spacing: 0.02em">Filip Krudenc</span>
+<a class="word stretch" href="#prednasky" style="display: flex; flex-direction: column; align-items: flex-start; gap: 20px; text-decoration: none; font-family: 'Instrument Serif', Georgia, serif; font-weight: 400; font-size: clamp(52px, 7vw, 112px); line-height: 1; letter-spacing: -0.01em"><span>Přednášky</span>
+<svg width="48" height="48" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 10h12M11 5l5 5-5 5"></path></svg>
+</a>
+</section>
+
+<section class="half half-r" style="isolation: isolate; overflow: hidden; display: flex; flex-direction: column; justify-content: space-between; gap: 56px; padding: clamp(24px, 4.5vw, 64px); background: var(--accent); color: #111315">
+<img src="img/treninky-zonglovani.jpg" alt="" aria-hidden="true" style="position: absolute; top: 0; right: 0; z-index: -1; width: 118%; max-width: none; height: 100%; object-fit: cover; object-position: 50% 30%; opacity: 0.6; pointer-events: none">
+<span aria-hidden="true"></span>
+<a class="word stretch" href="#treninky" style="display: flex; flex-direction: column; align-items: flex-start; gap: 20px; text-decoration: none; font-weight: 800; font-size: clamp(40px, 6vw, 96px); line-height: 1.03; letter-spacing: -0.035em; text-transform: uppercase"><span>Tréninky</span>
+<svg width="48" height="48" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 10h12M11 5l5 5-5 5"></path></svg>
+</a>
+</section>
+</main>
+
+<div class="pl" id="prednasky" style="--accent: #D4F34A; --accent-l: #D4F34A; background: #111315; color: #EDEDE8; font-family: 'Archivo', system-ui, sans-serif">
+
+<div style="position: relative; overflow: hidden; isolation: isolate">
+<img src="img/prednasky-sal.jpg" alt="" aria-hidden="true" style="position: absolute; inset: 0; z-index: -1; width: 100%; height: 100%; object-fit: cover; object-position: 70% 35%; opacity: 0.2; pointer-events: none; -webkit-mask-image: linear-gradient(to bottom, #000 55%, transparent); mask-image: linear-gradient(to bottom, #000 55%, transparent)">
+<section style="max-width: 1200px; margin: 0 auto; padding: clamp(48px, 8vw, 112px) clamp(24px, 5vw, 64px) clamp(56px, 8vw, 96px); display: flex; flex-direction: column; gap: 32px">
+<h1 style="margin: 0; max-width: 14ch; font-family: 'Instrument Serif', Georgia, serif; font-weight: 400; font-size: clamp(52px, 8vw, 120px); line-height: 0.96; letter-spacing: -0.01em; text-wrap: balance">Přednášky, po kterých <em style="color: var(--accent-l)">lidé jednají.</em></h1>
+<p style="margin: 0; max-width: 52ch; font-size: 20px; line-height: 1.55; color: #C9CBC5; text-wrap: pretty">Přednáším o paměťových technikách, efektivitě učení, finanční gramotnosti a Evropské unii. Konkrétní příběhy a nástroje, které si publikum odnese a hned použije.</p>
+</section>
+</div>
+
+<div style="position: relative; overflow: hidden; isolation: isolate">
+<img src="img/prednasky-podium.jpg" alt="" aria-hidden="true" style="position: absolute; inset: 0; z-index: -1; width: 100%; height: 100%; object-fit: cover; object-position: 60% 45%; opacity: 0.2; pointer-events: none; -webkit-mask-image: linear-gradient(to bottom, transparent, #000 25%, #000 75%, transparent); mask-image: linear-gradient(to bottom, transparent, #000 25%, #000 75%, transparent)">
+<section style="max-width: 1200px; margin: 0 auto; padding: clamp(80px, 11vw, 160px) clamp(24px, 5vw, 64px); display: flex; flex-direction: column; gap: 32px">
+<span style="font-size: 14px; letter-spacing: 0.18em; text-transform: uppercase; color: var(--accent-l)">O mně</span>
+<h2 style="margin: 0; max-width: 16ch; font-family: 'Instrument Serif', Georgia, serif; font-weight: 400; font-size: clamp(44px, 6vw, 84px); line-height: 1.02; letter-spacing: -0.02em; text-wrap: balance">Studuji, zkoumám a přednáším.</h2>
+<p style="margin: clamp(0px, 2vw, 24px) 0 0; max-width: 52ch; font-size: 20px; line-height: 1.6; color: #A9ABA6">Zajímá mě, jak se lidé nejlíp učí a co v učebně opravdu funguje. Proto dělám výzkum efektivity výuky a to, co zjistím, předávám dál v přednáškách. K tomu diplomatická zkušenost z Bruselu, díky které o Evropské unii nemluvím jen z učebnic.</p>
+<div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(min(240px, 100%), 1fr)); gap: 40px; margin-top: clamp(16px, 4vw, 48px)">
+<div style="border-top: 1px solid rgba(237, 237, 232, 0.25); padding-top: 20px; display: flex; flex-direction: column; gap: 10px"><span style="font-size: 13px; letter-spacing: 0.16em; text-transform: uppercase; color: var(--accent-l)">Vystudováno</span><span style="font-size: 24px; font-weight: 500; line-height: 1.25">Evropská studia, Masarykova univerzita</span></div>
+<div style="border-top: 1px solid rgba(237, 237, 232, 0.25); padding-top: 20px; display: flex; flex-direction: column; gap: 10px"><span style="font-size: 13px; letter-spacing: 0.16em; text-transform: uppercase; color: var(--accent-l)">Současně studuji</span><span style="font-size: 24px; font-weight: 500; line-height: 1.25">Informatiku a andragogiku</span></div>
+<div style="border-top: 1px solid rgba(237, 237, 232, 0.25); padding-top: 20px; display: flex; flex-direction: column; gap: 10px"><span style="font-size: 13px; letter-spacing: 0.16em; text-transform: uppercase; color: var(--accent-l)">Výzkum</span><span style="font-size: 24px; font-weight: 500; line-height: 1.25">Efektivita výuky na školách</span></div>
+</div>
+</section>
+</div>
+
+<div style="background: #1A1D20">
+<section style="max-width: 1200px; margin: 0 auto; padding: clamp(80px, 11vw, 160px) clamp(24px, 5vw, 64px); display: flex; flex-direction: column; gap: 32px">
+<span style="font-size: 14px; letter-spacing: 0.18em; text-transform: uppercase; color: var(--accent-l)">Kde vystupuji</span>
+<h2 style="margin: 0; max-width: 16ch; font-family: 'Instrument Serif', Georgia, serif; font-weight: 400; font-size: clamp(44px, 6vw, 84px); line-height: 1.02; letter-spacing: -0.02em; text-wrap: balance">Na pódiu i ve třídě.</h2>
+<div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(min(280px, 100%), 1fr)); gap: clamp(40px, 8vw, 120px); margin-top: clamp(24px, 5vw, 64px)">
+<div style="display: flex; flex-direction: column; gap: 16px"><h3 style="margin: 0; font-size: clamp(24px, 2.4vw, 34px); font-weight: 500; letter-spacing: -0.01em">Konference a firemní setkání</h3><p style="margin: 0; max-width: 34ch; font-size: 20px; line-height: 1.6; color: #A9ABA6">Vystoupení na pódiu přizpůsobené programu a publiku vaší akce.</p></div>
+<div style="display: flex; flex-direction: column; gap: 16px"><h3 style="margin: 0; font-size: clamp(24px, 2.4vw, 34px); font-weight: 500; letter-spacing: -0.01em">Školy a vzdělávací instituce</h3><p style="margin: 0; max-width: 34ch; font-size: 20px; line-height: 1.6; color: #A9ABA6">Srozumitelný obsah pro studenty i pedagogy: paměťové techniky, efektivita učení, finanční gramotnost a EU.</p></div>
+</div>
+</section>
+</div>
+
+<section style="max-width: 1200px; margin: 0 auto; padding: clamp(80px, 11vw, 160px) clamp(24px, 5vw, 64px); display: flex; flex-direction: column; gap: 32px">
+<span style="font-size: 14px; letter-spacing: 0.18em; text-transform: uppercase; color: var(--accent-l)">Témata</span>
+<h2 style="margin: 0; max-width: 16ch; font-family: 'Instrument Serif', Georgia, serif; font-weight: 400; font-size: clamp(44px, 6vw, 84px); line-height: 1.02; letter-spacing: -0.02em; text-wrap: balance">Čtyři témata. <span style="color: #8A8D87">Jedna myšlenka.</span></h2>
+<div class="tm-list" style="margin-top: clamp(24px, 5vw, 64px); border-bottom: 1px solid rgba(237, 237, 232, 0.25)">
+<div class="tm" style="display: grid; grid-template-columns: clamp(40px, 7vw, 90px) 1fr 1.2fr; align-items: baseline; gap: 8px 24px; padding: clamp(28px, 4vw, 44px) 0; border-top: 1px solid rgba(237, 237, 232, 0.25)"><span style="font-size: 16px; color: #8A8D87">01</span><span class="tm-n" style="font-size: clamp(28px, 3.6vw, 48px); font-weight: 500; letter-spacing: -0.02em; line-height: 1.1">Paměťové techniky</span><span style="font-size: 19px; line-height: 1.6; color: #A9ABA6">Praktické techniky, jak si zapamatovat víc a na delší dobu.</span></div>
+<div class="tm" style="display: grid; grid-template-columns: clamp(40px, 7vw, 90px) 1fr 1.2fr; align-items: baseline; gap: 8px 24px; padding: clamp(28px, 4vw, 44px) 0; border-top: 1px solid rgba(237, 237, 232, 0.25)"><span style="font-size: 16px; color: #8A8D87">02</span><span class="tm-n" style="font-size: clamp(28px, 3.6vw, 48px); font-weight: 500; letter-spacing: -0.02em; line-height: 1.1">Efektivita učení</span><span style="font-size: 19px; line-height: 1.6; color: #A9ABA6">Co ukazuje výzkum efektivity učení na školách a jak ho využít v praxi.</span></div>
+<div class="tm" style="display: grid; grid-template-columns: clamp(40px, 7vw, 90px) 1fr 1.2fr; align-items: baseline; gap: 8px 24px; padding: clamp(28px, 4vw, 44px) 0; border-top: 1px solid rgba(237, 237, 232, 0.25)"><span style="font-size: 16px; color: #8A8D87">03</span><span class="tm-n" style="font-size: clamp(28px, 3.6vw, 48px); font-weight: 500; letter-spacing: -0.02em; line-height: 1.1">Finanční gramotnost</span><span style="font-size: 19px; line-height: 1.6; color: #A9ABA6">Přednášky pro školy o základech hospodaření s penězi.</span></div>
+<div class="tm" style="display: grid; grid-template-columns: clamp(40px, 7vw, 90px) 1fr 1.2fr; align-items: baseline; gap: 8px 24px; padding: clamp(28px, 4vw, 44px) 0; border-top: 1px solid rgba(237, 237, 232, 0.25)"><span style="font-size: 16px; color: #8A8D87">04</span><span class="tm-n" style="font-size: clamp(28px, 3.6vw, 48px); font-weight: 500; letter-spacing: -0.02em; line-height: 1.1">Evropská unie</span><span style="font-size: 19px; line-height: 1.6; color: #A9ABA6">Přednášky pro školy o tom, jak funguje Evropská unie a co pro nás znamená.</span></div>
+</div>
+</section>
+
+<div style="background: #1A1D20">
+<section style="max-width: 1200px; margin: 0 auto; padding: clamp(56px, 8vw, 96px) clamp(24px, 5vw, 64px)">
+<details class="acc" style="border-top: 1px solid rgba(237, 237, 232, 0.25)">
+<summary style="display: flex; align-items: center; justify-content: space-between; gap: 24px; cursor: pointer; padding: 28px 0; min-height: 44px">
+<h2 style="margin: 0; font-family: 'Instrument Serif', Georgia, serif; font-weight: 400; font-size: clamp(36px, 4vw, 56px); line-height: 1">Reference</h2>
+<svg class="plus" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" aria-hidden="true"><path d="M12 5v14M5 12h14"></path></svg>
+</summary>
+<div style="border-bottom: 1px solid rgba(237, 237, 232, 0.25)"><a href="https://www.simeon.cz/clanky/V-Hradci-Kralove-probehl-dalsi-rocnik-Akademie-pro-aktivni-treti-vek.html" target="_blank" rel="noopener" style="display: flex; flex-wrap: wrap; align-items: center; gap: 8px 40px; padding: 24px 0px; border-top: 1px solid rgba(237, 237, 232, 0.25); text-decoration: none"><span style="flex: 1 1 280px; font-size: 24px; font-weight: 500">Mladý lektor učil seniory, jak trénovat paměť</span><span style="flex: 2 1 320px; font-size: 17px; color: rgb(169, 171, 166)">Simeon.cz, 2026</span></a><a href="https://www.zsplotiste.cz/?p=9320" target="_blank" rel="noopener" style="display: flex; flex-wrap: wrap; align-items: center; gap: 8px 40px; padding: 24px 0px; border-top: 1px solid rgba(237, 237, 232, 0.25); text-decoration: none"><span style="flex: 1 1 280px; font-size: 24px; font-weight: 500">Zacházení s penězi na druhém stupni</span><span style="flex: 2 1 320px; font-size: 17px; color: rgb(169, 171, 166)">ZŠ Masarykova, 2025</span></a><a href="https://www.zssever.cz/2024/financni-gramotnost-8-a/" target="_blank" rel="noopener" style="display: flex; flex-wrap: wrap; align-items: center; gap: 8px 40px; padding: 24px 0px; border-top: 1px solid rgba(237, 237, 232, 0.25); text-decoration: none"><span style="flex: 1 1 280px; font-size: 24px; font-weight: 500">Osmáci se naučili rozpoznat finanční podvody</span><span style="flex: 2 1 320px; font-size: 17px; color: rgb(169, 171, 166)">ZŠ Sever, Hradec Králové, 2024</span></a><a href="https://www.skolahlusice.cz/zakladni-skola/aktuality/kurz-financni-gramotnosti-pro-zaky-2stupne-1476cs.html" target="_blank" rel="noopener" style="display: flex; flex-wrap: wrap; align-items: center; gap: 8px 40px; padding: 24px 0px; border-top: 1px solid rgba(237, 237, 232, 0.25); text-decoration: none"><span style="flex: 1 1 280px; font-size: 24px; font-weight: 500">Peníze v praxi: žáci plánovali rozpočet i spoření</span><span style="flex: 2 1 320px; font-size: 17px; color: rgb(169, 171, 166)">ZŠ a MŠ Hlušice, 2024</span></a></div>
+</details>
+</section>
+</div>
+
+<section style="background: var(--accent); color: #111315">
+<div style="max-width: 1200px; margin: 0 auto; padding: clamp(56px, 8vw, 96px) clamp(24px, 5vw, 64px); display: flex; flex-direction: column; align-items: flex-start; gap: 32px">
+<h2 style="margin: 0; max-width: 16ch; font-family: 'Instrument Serif', Georgia, serif; font-weight: 400; font-size: clamp(44px, 6vw, 88px); line-height: 0.98; text-wrap: balance">Pozvěte mě na svou akci.</h2>
+<div style="display: flex; flex-wrap: wrap; gap: 16px">
+<a class="cta" href="mailto:filip@filipkrudenc.cz" target="_blank" rel="noopener" style="display: inline-flex; align-items: center; gap: 12px; min-height: 56px; padding: 0 30px; border-radius: 999px; background: #111315; color: var(--accent); font-weight: 700; font-size: 17px; text-decoration: none">Napsat e-mail
+<svg width="20" height="20" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 10h12M11 5l5 5-5 5"></path></svg>
+</a>
+<a class="cta2" href="https://wa.me/420792497976" target="_blank" rel="noopener" style="display: inline-flex; align-items: center; gap: 12px; min-height: 56px; padding: 0 28px; border: 2px solid #111315; border-radius: 999px; color: #111315; font-weight: 700; font-size: 17px; text-decoration: none">Napsat na WhatsApp
+<svg width="20" height="20" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 10h12M11 5l5 5-5 5"></path></svg>
+</a>
+<a class="cta2" href="https://www.linkedin.com/in/filipkrudenc/" target="_blank" rel="noopener" aria-label="LinkedIn" style="display: inline-flex; width: 56px; height: 56px; border-radius: 14px; text-decoration: none"><img src="img/linkedin.png" alt="" width="56" height="56" style="display: block; width: 56px; height: 56px">
+</a>
+</div>
+</div>
+</section>
+</div>
+
+<div class="pt" id="treninky" style="--accent: #D4F34A; background: var(--accent); color: #111315; font-family: 'Archivo', system-ui, sans-serif">
+
+<div style="position: relative; overflow: hidden; isolation: isolate; background: #111315; color: #EDEDE8">
+<img src="img/treninky-hrazda.jpg" alt="" aria-hidden="true" style="position: absolute; top: 0; right: 0; bottom: 0; z-index: -1; width: clamp(320px, 46%, 720px); height: 100%; object-fit: cover; object-position: 50% 28%; opacity: 0.55; pointer-events: none; -webkit-mask-image: linear-gradient(to right, transparent, #000 45%), linear-gradient(to bottom, #000 55%, transparent); -webkit-mask-composite: source-in; mask-image: linear-gradient(to right, transparent, #000 45%), linear-gradient(to bottom, #000 55%, transparent); mask-composite: intersect">
+<section style="max-width: 1200px; margin: 0 auto; padding: clamp(48px, 8vw, 112px) clamp(24px, 5vw, 64px) clamp(56px, 8vw, 96px); display: flex; flex-direction: column; gap: 32px">
+<h1 style="margin: 0; max-width: 12ch; font-weight: 800; font-size: clamp(44px, 7.4vw, 112px); line-height: 1.03; letter-spacing: -0.04em; text-transform: uppercase; text-wrap: balance">Trénink na míru. Posun, který uvidíš.</h1>
+<p style="margin: 0; max-width: 52ch; font-size: 20px; line-height: 1.55; color: #C9CBC5; text-wrap: pretty">Individuální i skupinové tréninky pohybu.&nbsp;Krok za krokem od první konzultace po měřitelné výsledky.</p>
+</section>
+</div>
+
+<div style="position: relative; overflow: hidden; isolation: isolate">
+<img class="about-img" src="img/treninky-stojka.jpg" alt="" aria-hidden="true" style="position: absolute; top: -14%; right: clamp(-40px, 2vw, 40px); z-index: -1; height: 160%; width: auto; max-width: none; opacity: 0.5; pointer-events: none; -webkit-mask-image: linear-gradient(to right, transparent, #000 25%, #000 75%, transparent); mask-image: linear-gradient(to right, transparent, #000 25%, #000 75%, transparent)">
+<section class="about" style="max-width: 1200px; margin: 0 auto; padding: clamp(24px, 4vw, 48px) clamp(24px, 5vw, 64px) clamp(96px, 12vw, 160px)">
+<h2 style="margin: 0; font-weight: 800; font-size: clamp(28px, 3.2vw, 44px); line-height: 1; letter-spacing: -0.03em; text-transform: uppercase">O mně</h2>
+<div style="display: flex; flex-direction: column; gap: 24px; align-items: flex-start">
+<p style="margin: 0; max-width: 14ch; font-weight: 800; font-size: clamp(36px, 4.6vw, 64px); line-height: 1; letter-spacing: -0.035em; text-wrap: balance">Celý život se hýbu.</p>
+<p style="margin: 0; max-width: 40ch; font-size: 19px; line-height: 1.6; color: #2C3210">Začalo to judem, pak přišla gymnastika a bouldering. Každý sport mě naučil něco jiného, a právě proto mi nejvíc dává smysl vsestrannost: být silný, pohyblivý i vytrvalý zároveň, ne jen v jedné disciplíně.</p>
+<p style="margin: 0; max-width: 40ch; font-size: 19px; line-height: 1.6; color: #2C3210">Dnes k tomu patří i kettlebelly. A přesně tuhle svobodu v pohybu chci předat i tobě.</p>
+</div>
+</section>
+</div>
+
+<div class="forms" style="background: #111315; color: #EDEDE8">
+<section style="max-width: 1200px; margin: 0 auto; padding: clamp(56px, 8vw, 96px) clamp(24px, 5vw, 64px); display: flex; flex-direction: column; gap: 40px">
+<h2 style="margin: 0; font-weight: 800; font-size: clamp(28px, 3.2vw, 44px); line-height: 1; letter-spacing: -0.03em; text-transform: uppercase; color: var(--accent)">Formy spolupráce</h2>
+<div>
+<a class="frm" href="https://api.whatsapp.com/send?phone=420792497976&amp;text=Ahoj%20Filipe%20%F0%9F%91%8B%20M%C3%A1m%20z%C3%A1jem%20o%20individu%C3%A1ln%C3%AD%20tr%C3%A9nink%201%3A1.%20Mohli%20bychom%20si%20o%20tom%20popov%C3%ADdat%3F%20%F0%9F%92%AA" target="_blank" rel="noopener"><div class="n">A</div><h3 style="margin: 0; font-size: clamp(22px, 2.2vw, 30px); font-weight: 800">Individuální trénink 1:1</h3><p style="margin: 0; font-size: 18px; line-height: 1.55">Plán postavený na tvém výchozím bodě, cíli a času, který máš.</p><div class="arr"><svg width="20" height="20" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 10h12M11 5l5 5-5 5"></path></svg></div></a>
+<a class="frm" href="https://api.whatsapp.com/send?phone=420792497976&amp;text=Ahoj%20Filipe%20%F0%9F%91%8B%20Zaujaly%20m%C4%9B%20tvoje%20skupinov%C3%A9%20programy.%20M%C5%AF%C5%BEe%C5%A1%20mi%20o%20nich%20%C5%99%C3%ADct%20v%C3%ADc%3F%20%F0%9F%99%8C" target="_blank" rel="noopener"><div class="n">B</div><h3 style="margin: 0; font-size: clamp(22px, 2.2vw, 30px); font-weight: 800">Skupinové programy</h3><p style="margin: 0; font-size: 18px; line-height: 1.55">Pravidelná práce ve skupině, kde se navzájem posouváte.</p><div class="arr"><svg width="20" height="20" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 10h12M11 5l5 5-5 5"></path></svg></div></a>
+<a class="frm" href="https://api.whatsapp.com/send?phone=420792497976&amp;text=Ahoj%20Filipe%20%F0%9F%91%8B%20M%C3%A1m%20z%C3%A1jem%20o%20online%20spolupr%C3%A1ci.%20Jak%20by%20to%20mohlo%20fungovat%3F%20%F0%9F%92%BB" target="_blank" rel="noopener"><div class="n">C</div><h3 style="margin: 0; font-size: clamp(22px, 2.2vw, 30px); font-weight: 800">Online vedení</h3><p style="margin: 0; font-size: 18px; line-height: 1.55">Trénink na dálku: plán na míru, videohovory a pravidelná zpětná vazba. Ať bydlíš kdekoli.</p><div class="arr"><svg width="20" height="20" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 10h12M11 5l5 5-5 5"></path></svg></div></a>
+</div>
+</section>
+</div>
+
+<div style="position: relative; overflow: hidden; isolation: isolate; background: var(--accent); color: #111315">
+<img src="img/treninky-postup.jpg" alt="" aria-hidden="true" style="position: absolute; top: 0; left: 0; bottom: 0; z-index: -1; width: clamp(320px, 46%, 720px); height: 100%; object-fit: cover; object-position: 50% 0%; opacity: 0.26; pointer-events: none; -webkit-mask-image: linear-gradient(to left, transparent, #000 45%), linear-gradient(to bottom, transparent, #000 4%, #000 92%, transparent); -webkit-mask-composite: source-in; mask-image: linear-gradient(to left, transparent, #000 45%), linear-gradient(to bottom, transparent, #000 4%, #000 92%, transparent); mask-composite: intersect">
+<section class="stair" style="max-width: 1200px; margin: 0 auto; padding: clamp(56px, 8vw, 96px) clamp(24px, 5vw, 64px) clamp(120px, 16vw, 220px)">
+<div class="stair-l"><h2 style="margin: 0; font-weight: 800; font-size: clamp(36px, 4.6vw, 64px); line-height: 1.03; letter-spacing: -0.035em; text-transform: uppercase">Jak to<br>probíhá</h2><p style="margin: 24px 0 0; max-width: 28ch; font-size: 18px; line-height: 1.55; color: #2C3210">Tři kroky od první konzultace po výsledky.</p></div>
+<div class="stair-r">
+<div class="stp" style="margin-left: clamp(0px, 0vw, 0px)"><div class="sn">1</div><div><h3 style="margin: 0; font-size: clamp(22px, 2.2vw, 28px); font-weight: 800">Konzultace</h3><p style="margin: 8px 0 0; font-size: 18px; line-height: 1.55; color: #C9CBC5">Zjistíme, kde jsi teď a kam chceš dojít.</p></div></div>
+<div class="stp" style="margin-left: clamp(0px, 4vw, 56px)"><div class="sn">2</div><div><h3 style="margin: 0; font-size: clamp(22px, 2.2vw, 28px); font-weight: 800">Plán</h3><p style="margin: 8px 0 0; font-size: 18px; line-height: 1.55; color: #C9CBC5">Společně nastavíme kroky a to, podle čeho poznáš pokrok.</p></div></div>
+<div class="stp" style="margin-left: clamp(0px, 8vw, 112px)"><div class="sn">3</div><div><h3 style="margin: 0; font-size: clamp(22px, 2.2vw, 28px); font-weight: 800">Trénink a vyhodnocení</h3><p style="margin: 8px 0 0; font-size: 18px; line-height: 1.55; color: #C9CBC5">Pracujeme, měříme a plán průběžně upravujeme.</p></div></div>
+</div>
+</section>
+</div>
+
+
+<div class="forms" style="background: #111315; color: #EDEDE8">
+<section style="max-width: 1200px; margin: 0 auto; padding: clamp(56px, 8vw, 96px) clamp(24px, 5vw, 64px)">
+<div style="display: flex; flex-direction: column; gap: 32px">
+<h2 style="margin: 0; font-weight: 800; font-size: clamp(28px, 3.2vw, 44px); line-height: 1; letter-spacing: -0.03em; text-transform: uppercase; color: var(--accent)">Reference</h2>
+<figure style="margin: 0; padding: 32px 0 0; border-top: 2px solid #111315; display: flex; flex-direction: column; gap: 24px">
+<blockquote style="margin: 0; max-width: 22ch; font-weight: 800; font-size: clamp(32px, 4.6vw, 64px); line-height: 1.02; letter-spacing: -0.035em; text-wrap: balance">„Jsem v nejlepší formě za posledních 20 let, díky tobě.“</blockquote>
+<figcaption style="font-size: 18px; font-weight: 700">Aleš</figcaption>
+</figure>
+</div>
+</section>
+</div>
+
+<section style="background: #111315; color: #EDEDE8; border-top: 1px solid rgba(237, 237, 232, 0.2)">
+<div style="max-width: 1200px; margin: 0 auto; padding: clamp(56px, 8vw, 96px) clamp(24px, 5vw, 64px); display: flex; flex-direction: column; align-items: flex-start; gap: 32px">
+<h2 style="margin: 0; max-width: 14ch; font-weight: 800; font-size: clamp(40px, 5.6vw, 80px); line-height: 1.03; letter-spacing: -0.035em; text-transform: uppercase; text-wrap: balance">Začněme konzultací.</h2>
+<div style="display: flex; flex-wrap: wrap; gap: 16px">
+<a class="cta" href="mailto:filip@filipkrudenc.cz" target="_blank" rel="noopener" style="display: inline-flex; align-items: center; gap: 12px; min-height: 56px; padding: 0 30px; border-radius: 999px; background: var(--accent); color: #111315; font-weight: 700; font-size: 17px; text-decoration: none">Domluvit e-mailem
+<svg width="20" height="20" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 10h12M11 5l5 5-5 5"></path></svg>
+</a>
+<a class="cta" href="https://wa.me/420792497976" target="_blank" rel="noopener" style="display: inline-flex; align-items: center; gap: 12px; min-height: 56px; padding: 0 28px; border: 2px solid var(--accent); border-radius: 999px; color: var(--accent); font-weight: 700; font-size: 17px; text-decoration: none">Domluvit přes WhatsApp
+<svg width="20" height="20" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 10h12M11 5l5 5-5 5"></path></svg>
+</a>
+<a class="cta" href="https://www.instagram.com/krudenz/" target="_blank" rel="noopener" style="display: inline-flex; align-items: center; gap: 12px; min-height: 56px; padding: 0 28px; border: 2px solid var(--accent); border-radius: 999px; color: var(--accent); font-weight: 700; font-size: 17px; text-decoration: none">Domluvit přes Instagram
+<svg width="20" height="20" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 10h12M11 5l5 5-5 5"></path></svg>
+</a>
+</div>
+</div>
+</section>
+</div>
+<div style="background: #111315; display: flex; justify-content: center; padding: clamp(40px, 6vw, 72px) 24px clamp(56px, 8vw, 96px); border-top: 1px solid rgba(237, 237, 232, 0.2)">
+<a class="totop" href="#top">
+<svg width="20" height="20" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M10 16V4M5 9l5-5 5 5"></path></svg>
+Zpět nahoru
+</a>
+</div>
+</div>
+
+</body>
+</html>
